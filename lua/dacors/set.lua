@@ -24,6 +24,8 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes" 
 vim.opt.colorcolumn = "80" 
 
-vim.g.netrw_banner = 0
-
 vim.g.copilot_no_tab_map = true
+
+vim.opt.foldenable = false 
+vim.opt.foldmethod = "marker"
+vim.opt.foldmarker = "{,}"
