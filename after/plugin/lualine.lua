@@ -1,16 +1,34 @@
+require('nvim-web-devicons').get_icons()
 require('lualine').setup({
-    options = { section_separators = '', component_separators = '' },
+    options = { 
+        section_separators = '', 
+        component_separators = '',
+        icons_enabled = true,
+    },
     sections = {
         lualine_b = {
             {
                 'branch',
                 icons_enable = true,
-                icon = ''
+            }
+        },
+        lualine_c = {
+            {
+                'filename',
+                icons_enable = true,
+                path = 1
             }
         },
         lualine_x = {
             {
                 'diff',
+            }
+        },
+        lualine_y = {
+            {
+                'filetype',
+                colored = true,
+                icon_only = false,
             }
         },
         lualine_z = {
@@ -21,3 +39,4 @@ require('lualine').setup({
         }
     }
 })
+
