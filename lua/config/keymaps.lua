@@ -22,6 +22,9 @@ keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>")
 keymap.set("n", "<leader>;", function()
   vim.lsp.buf.hover()
 end)
+keymap.set("n", "<leader>rv", function()
+  vim.lsp.buf.rename()
+end)
 
 --select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
