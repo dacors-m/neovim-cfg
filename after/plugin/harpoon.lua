@@ -6,4 +6,4 @@ vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu)
 
 
 vim.keymap.set("n", "<C-p>", function() ui.nav_next() end) 
-vim.keymap.set("n", "<C-o>", function() ui.nav_prev() end) 
+vim.keymap.set("n", "<C-n>", function() ui.nav_prev() end) 
