@@ -28,3 +28,9 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 
 --fugitive
 keymap.set("n", "<leader>gg", vim.cmd.Git)
+
+--vim - go
+keymap.set("n", "<leader>gc", vim.cmd.GoCoverage)
+keymap.set("n", "<leader>gb", vim.cmd.GoBuild)
+keymap.set("n", "<leader>gt", vim.cmd.GoTest)
+keymap.set("n", "<leader>ga", vim.cmd.GoAlternate)
