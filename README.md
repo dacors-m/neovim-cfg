@@ -1,2 +1,2 @@
-# Dacors Nvim Configuration
+# My neovim configuration with lazy vim
 
