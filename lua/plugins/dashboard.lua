@@ -29,7 +29,7 @@ return {
             return vim.cmd.Git()
           end,
           desc = " Git",
-          icon = " ",
+          icon = "󰊢 ",
           key = "g",
         },
         {
