@@ -4,7 +4,6 @@ return {
     event = "VimEnter",
     opts = function(_, opts)
       local logo = [[
-
       
 ██████╗  █████╗  ██████╗ ██████╗ ██████╗ ███████╗
 ██╔══██╗██╔══██╗██╔════╝██╔═══██╗██╔══██╗██╔════╝
@@ -13,19 +12,25 @@ return {
 ██████╔╝██║  ██║╚██████╗╚██████╔╝██║  ██║███████║
 ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
                                                  
-
-
       ]]
 
-      logo = string.rep("\n", 8) .. logo .. "\n\n"
+      logo = string.rep("\n", 8) .. logo .. "\n"
       opts.config.header = vim.split(logo, "\n")
 
       opts.config.center = {
         {
           action = "Telescope find_files",
           desc = " Find file",
-          icon = "<?>",
+          icon = "󰱼",
           key = "f",
+        },
+        {
+          action = function()
+            return vim.cmd.Git()
+          end,
+          desc = " Git",
+          icon = " ",
+          key = "g",
         },
         {
           action = [[lua require("lazyvim.util").telescope.config_files()()]],
@@ -42,7 +47,7 @@ return {
       }
 
       opts.config.footer = function()
-        return { "⚡ Neovim" }
+        return { "⚡ The magic you are looking for is in the work you are avoiding ⚡" }
       end
     end,
   },

@@ -22,8 +22,17 @@ keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>")
 keymap.set("n", "<leader>;", function()
   vim.lsp.buf.hover()
 end)
+
 keymap.set("n", "<leader>rv", function()
   vim.lsp.buf.rename()
+end)
+
+keymap.set("n", "<leader>gr", function()
+  vim.lsp.buf.references()
+end)
+
+keymap.set("n", "<leader>gi", function()
+  vim.lsp.buf.implementation()
 end)
 
 --select all
@@ -32,8 +41,5 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 --fugitive
 keymap.set("n", "<leader>gg", vim.cmd.Git)
 
---vim - go
-keymap.set("n", "<leader>gc", vim.cmd.GoCoverage)
-keymap.set("n", "<leader>gb", vim.cmd.GoBuild)
-keymap.set("n", "<leader>gt", vim.cmd.GoTest)
+--vim go
 keymap.set("n", "<leader>ga", vim.cmd.GoAlternate)
