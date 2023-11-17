@@ -2,8 +2,8 @@ return {
 
   {
     "catppuccin/nvim",
-    lazy = true,
     as = "catppuccin",
+    lazy = false,
     config = function()
       local theme = require("catppuccin")
       theme.setup({
@@ -19,6 +19,7 @@ return {
   {
     "folke/tokyonight.nvim",
     as = "tokyonight",
+    lazy = false,
     config = function()
       local theme = require("tokyonight")
       theme.setup({
