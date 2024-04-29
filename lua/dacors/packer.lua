@@ -17,6 +17,8 @@ return require('packer').startup(function(use)
 
   --utilities
   use ({ 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} }})
+  use ('voldikss/vim-floaterm')
+
   
   use {
 	  'VonHeikemen/lsp-zero.nvim',
