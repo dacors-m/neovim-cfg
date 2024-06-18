@@ -19,6 +19,11 @@ return require('packer').startup(function(use)
   use ({ 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} }})
   use ('voldikss/vim-floaterm')
 
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
   
   use {
 	  'VonHeikemen/lsp-zero.nvim',
