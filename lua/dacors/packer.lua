@@ -24,6 +24,17 @@ return require('packer').startup(function(use)
     branch = "harpoon2",
     requires = { {"nvim-lua/plenary.nvim"} }
   }
+
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+        "nvim-neotest/nvim-nio",
+        "nvim-lua/plenary.nvim",
+        "antoinemadec/FixCursorHold.nvim",
+        "nvim-treesitter/nvim-treesitter",
+        "nvim-neotest/neotest-python"
+        }
+    }
   
   use {
 	  'VonHeikemen/lsp-zero.nvim',

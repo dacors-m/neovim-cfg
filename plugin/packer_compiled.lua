@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -129,6 +139,16 @@ _G.packer_plugins = {
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neotest = {
+    loaded = true,
+    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/neotest",
+    url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-python"] = {
+    loaded = true,
+    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/neotest-python",
+    url = "https://github.com/nvim-neotest/neotest-python"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -139,15 +159,15 @@ _G.packer_plugins = {
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-dap-python"] = {
-    loaded = true,
-    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
-    url = "https://github.com/mfussenegger/nvim-dap-python"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -168,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["venv-selector.nvim"] = {
-    loaded = true,
-    path = "/Users/dcortesmanti/.local/share/nvim/site/pack/packer/start/venv-selector.nvim",
-    url = "https://github.com/linux-cultist/venv-selector.nvim"
   },
   ["vim-floaterm"] = {
     loaded = true,

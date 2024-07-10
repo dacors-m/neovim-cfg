@@ -16,6 +16,3 @@ vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>")
 vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>")
 vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>")
 
-
---term
-vim.keymap.set("n", "<leader>t", "<cmd>FloatermNew<CR>")
