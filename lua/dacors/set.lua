@@ -24,3 +24,4 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.g.floaterm_title = ""
+vim.g.netrw_bufsettings = "nu"
