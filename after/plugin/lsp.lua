@@ -8,6 +8,9 @@ local on_attach = function(_,_)
     vim.keymap.set("n", "<leader>ff", function() vim.lsp.buf.format() end)
     vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end)
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end)
+    vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end)
+    vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end)
+    vim.keymap.set("n", "gc", function() vim.lsp.buf.outgoing_calls() end)
 end
 
 lspconfig.pyright.setup{
