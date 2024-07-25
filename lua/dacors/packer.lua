@@ -29,12 +29,14 @@ return require('packer').startup(function(use)
     "nvim-neotest/neotest",
     requires = {
         "nvim-neotest/nvim-nio",
+        "andythigpen/nvim-coverage",
         "nvim-lua/plenary.nvim",
         "antoinemadec/FixCursorHold.nvim",
         "nvim-treesitter/nvim-treesitter",
         "nvim-neotest/neotest-python"
         }
     }
+
   
   use {
 	  'VonHeikemen/lsp-zero.nvim',
